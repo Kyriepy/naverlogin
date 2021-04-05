@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="./nvlogo.png" rel="shortcut icon" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>네이버 : 로그인</title>
+
+        <style>
+            body { 
+                background-color: #f2f2f2;
+                box-sizing: border-box;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+            }  
+
+            #lang {
+                position: absolute;
+                left: 50%;
+                bottom: 88%;
+                margin: 20px;
+                margin-left: 300px;
+                margin-bottom: 50px;
+                color: black;
+                border: solid 1px #d9d9d9;
+                background-color: #f2f2f2;
+                width: 100px;
+                height: 28px;
+                font-size: 13px;
+            }
+
+            #naverlogo {
+                font-family: 'Dela Gothic One', cursive;
+                color:#00cc44;
+                font-size: 56px; 
+                margin: 0px;
+            }
+
+            .input {
+                margin: 0px;
+                width: 442px;
+                padding: 15.5px;
+                border: solid 1px #d9d9d9;
+                text-align: start;
+                text-decoration: none;
+                text-decoration: #00b33c;
+                position: relative;
+            }
+
+            input:focus {
+                outline: 1px solid #00cc44;
+            }
+
+            a {
+                text-decoration: none;
+
+            }
+
+            a.naver:link {
+                color: #00cc44;
+            }
+
+            a.naver:visited{
+                color: #00cc44;
+            }
+
+            a.small:link {
+                color: #808080;
+            }
+            
+            a.small:visited{
+                color: #808080;
+            }
+            
+            .btn {
+                background-color: #00cc44;
+                color: white;
+                border: #00b33c;
+                margin: 0px;
+                text-decoration: none;
+                font-size: 16px;
+                text-align: center;
+                outline: none;
+                padding: 17.5px;
+                width: 473px;
+            }
+
+            p.reg {
+                color: #808080; 
+                font-size: 14px; 
+                margin-top: 55px;
+            }
+        
+            #sang {
+                position: absolute;
+                right: 50%;
+                bottom: 50%;
+                background-color: #f2f2f2;
+                border: #f2f2f2;
+                font-size: 16px;
+                outline: none;
+                width: 237px;
+                text-align: start;
+            }
+            
+            #ip {
+                position: absolute;
+                left: 50%;
+                bottom: 50%;
+                outline: none;
+                font-family: 'Dela Gothic One', cursive;
+                font-family: 'Open Sans', sans-serif;
+                background-color: #f2f2f2;
+                font-size: 16px;
+                color: black;
+                width: 237PX;
+                text-align: end;
+                border: solid 1px #f2f2f2;
+            }
+
+            #ip:link {
+                color: black;
+            }
+            
+            #ip:visited {
+                color: black;
+            }
+
+            #QR {
+                position: absolute;
+                right: 50%;
+                bottom: 33%;
+                width: 236px;
+                background-color: white;
+                border: solid 1px #00cc44;
+                margin-right: 5px;
+                outline: none;
+            }
+            #once {
+                position: absolute;
+                left: 50%;
+                bottom: 33%;
+                width: 236px;
+                background-color: white;
+                border: solid 1px #00cc44;
+                margin-left: 5px;
+                height: 62px;
+                outline: none;
+            }
+            #adv {
+                border: solid 1px black;
+                margin: 0px;
+                overflow: hidden;
+                width: 470px;
+                height: 193px;
+                background-color: white;
+                border: white;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+            <select title="언어선택" name="lang" id="lang">
+                <option value="ko_KR" >한국어</option>
+                <option value="en_US" >English</option>
+                <option value="zh-Hans_CN" >中文(简体)</option>
+                <option value="zh-Hant_TW" >中文(台灣)</option>
+            </select>
+        
+        
+            <p id="naverlogo" style="margin-top: 75px;"> <a href="https://www.naver.com"  target="_blank" class="naver"> NAVER </a></p>
+    
+            <p style="margin-top: 43px; margin-bottom: 8px;"><input type="text" class="input" placeholder="아이디"></p>
+            <p style="margin-top: 0px; margin-bottom: 16px;"><input type="password" class="input" placeholder="비밀번호"></p>    
+        <div>
+            <button class="btn" title="로그인" id="log" onclick="alert('FBI WARNING!')"> 로그인</button>
+        </div>
+            <button id="sang" onclick="alert('21-4-5 4:13am  Im very sleepy')"> ⓥ 로그인 상태 유지</button>
+            <button id="ip" ><a href="https://nid.naver.com/login/ext/help_ip3.html" target="_blank">ΙΡ 보안 OFF</a></button>
+            <p style="color: #d9d9d9; margin-top: 30px;">_____________________________________________________________________</p>
+            <p style="font-size: 19px; margin-bottom: 27px;">더욱 간편한 로그인</p>
+            <button type="button" id="QR" onclick="alert('sleep error!')"><img src="./큐알코드.png"></button>
+            <button type="button" id="once" onclick="alert('sleep error!')"><img src="./일회용.png"></button>
+            <p class="reg"><a href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR" class="small" target="_blank">아아디 찾기 &nbsp;|&nbsp; 비밀번호 찾기 &nbsp;|&nbsp; 회원가입</a></p>
+            <div>    
+                <button id="adv" onclick="alert('21-4-5 5:03am I can sleep now')"><img src="./광고.png" ></button>
+            </div>
+    </body>
+</html>
